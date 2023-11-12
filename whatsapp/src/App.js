@@ -14,8 +14,8 @@ function App() {
    }, [])
 
    useEffect(() => {
-      const pusher = new Pusher("0549dd38d53330346487", {
-         cluster: "ap1",
+      const pusher = new Pusher("<change to pusher id>", {
+         cluster: "<change to ip region>",
       })
 
       const channel = pusher.subscribe("messages")
