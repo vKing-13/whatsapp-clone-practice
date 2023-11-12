@@ -7,11 +7,7 @@ const app = express()
 const port = process.env.PORT || 9000
 
 const pusher = new Pusher({
-   appId: "1707021",
-   key: "0549dd38d53330346487",
-   secret: "7c963efe1da4a30d10d1",
-   cluster: "ap1",
-   useTLS: true,
+   <change with pusher information>
 })
 
 app.use(express.json())
@@ -23,7 +19,7 @@ app.use((req, res, next) => {
 })
 
 const connection_url =
-   "mongodb+srv://vicolee1363:sCXi1aFU59567PdB@cluster0.c0yyh6f.mongodb.net/?retryWrites=true&w=majority"
+   "mongodb+srv://<name>:<password>@cluster0.c0yyh6f.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose.connect(connection_url)
 
